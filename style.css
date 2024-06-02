@@ -1,6 +1,7 @@
 
 /* - Mobile: 375px
 - Desktop: 1440px */
+/* BASE */
 
 html {
     font-size: 15px;
@@ -25,6 +26,18 @@ body {
     margin: 0;
     padding: 0;;
 }
+/* BASE END */
+
+/* Helper */
+
+.w-100 {    
+    width: 100%;
+}
+
+/* Helper End */
+
+
+/* NAV */
 
 nav, 
 .container {
@@ -50,3 +63,43 @@ nav > ul >li > a:hover {
     text-decoration: underline;
 
 }
+/* NAV END */
+
+.container {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+.container > section {
+    background-color: red;
+    flex: 2;
+}
+.container > aside {
+    background-color: yellow;
+    flex: 1;
+    
+}
+
+.info {
+    display: flex;
+    gap: 30px;
+
+}
+.info > .item {
+    flex: 1;
+}
+
+.item-detail 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-detail > a {
+    color: var(--soft-orange);
+}
+
+
