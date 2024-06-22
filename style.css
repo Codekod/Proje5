@@ -173,25 +173,224 @@ footer.container > .item p{
 
 /* mediaquery start */
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 375px) { 
-    
+@media only screen and (max-width: 1100px) {
+    nav, .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: var(--off-white);
+        padding: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info h1 {
+        font-size: 3rem;
+        margin: 10px 0;
+    }
+    .item-detail > a.btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+    .container > aside {
+        padding: 10px;
+    }
+    .container > aside > h2 {
+        font-size: 1.8rem;
+    }
+    aside > .item {
+        margin-bottom: 20px;
+    }
+    footer.container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer.container > .item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer.container > .item > img {
+        width: 80px;
+        max-height: 100px;
+    }
+    footer.container > .item > div {
+        padding: 10px 0;
+    }
+    footer.container > .item h3 {
+        margin-bottom: 10px;
+    }
+}
 
+@media only screen and (max-width: 768px) {
+    nav, .container {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: var(--off-white);
+        padding: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info h1 {
+        font-size: 2.5rem;
+        margin: 10px 0;
+    }
+    .item-detail > a.btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+    .container > aside {
+        padding: 10px;
+    }
+    .container > aside > h2 {
+        font-size: 1.5rem;
+    }
+    aside > .item {
+        margin-bottom: 15px;
+    }
+    footer.container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer.container > .item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer.container > .item > img {
+        width: 80px;
+        max-height: 100px;
+    }
+    footer.container > .item > div {
+        padding: 10px 0;
+    }
+    footer.container > .item h3 {
+        margin-bottom: 10px;
+    }
+}
 
- }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { ... }
-
+@media only screen and (max-width: 375px) {
+    nav, .container {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: var(--off-white);
+        padding: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info h1 {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+    .item-detail > a.btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+    .container > aside {
+        padding: 10px;
+    }
+    .container > aside > h2 {
+        font-size: 1.5rem;
+    }
+    aside > .item {
+        margin-bottom: 15px;
+    }
+    footer.container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer.container > .item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer.container > .item > img {
+        width: 80px;
+        max-height: 100px;
+    }
+    footer.container > .item > div {
+        padding: 10px 0;
+    }
+    footer.container > .item h3 {
+        margin-bottom: 10px;
+    }
+}
 /* mediaquery end */
 
 
