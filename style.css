@@ -70,6 +70,19 @@ nav > ul >li > a:hover {
     
 
 }
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--very-dark-blue);
+}
 /* NAV END */
 
 .container {
