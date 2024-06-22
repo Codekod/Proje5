@@ -24,7 +24,7 @@ body {
     font-family: "Inter", sans-serif;
     background-color: var(--off-white);
     margin: 0;
-    padding: 0;;
+    padding: 0;
 }
 /* BASE END */
 
@@ -59,11 +59,15 @@ nav > ul {
 }
 
 a {
+    
     text-decoration: none;
     color: var(--dark-grayish-blue);
+    transition: width 2s;
 }
 nav > ul >li > a:hover {
     text-decoration: underline;
+    color: var(--soft-orange);
+    
 
 }
 /* NAV END */
@@ -72,7 +76,7 @@ nav > ul >li > a:hover {
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     
 }
 .container > section {
@@ -86,6 +90,7 @@ nav > ul >li > a:hover {
 
 .info {
     display: flex;
+    gap: 50px;
     
 
 }
@@ -134,5 +139,60 @@ aside > .item > h3 {
 aside > .item > p {
     color: var(--grayish-blue);
 }
+/* Footer Start */
+footer.container {
+    gap: 0;
+}
+
+footer.container > .item {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer.container > .item > img{
+    width: 100px;
+    max-height: 120px;
+}
+footer.container > .item > div{
+    flex: 2;
+    padding: 0 20px;
+}
+footer.container > .item h3{
+    margin: 0;
+    color: var(--grayish-blue);
+}
+footer.container > .item h4{
+    margin: 10px 0 0;
+    
+}
+footer.container > .item p{
+    margin: 10px 0 0;
+    color: var(--very-dark-blue);
+}
+/* Footer End */
+
+/* mediaquery start */
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 375px) { 
+    
+
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+
+/* mediaquery end */
+
 
 
